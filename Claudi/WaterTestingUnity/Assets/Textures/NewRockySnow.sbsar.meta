@@ -1,0 +1,92 @@
+fileFormatVersion: 2
+guid: b9ff2355d44537840bc431be1d2f8844
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100000: NewRockySnow
+    2800000: NewRockySnow - baseColor
+    2800002: NewRockySnow - normal
+    2800004: NewRockySnow - metallic
+    2800006: NewRockySnow - height
+    2800008: NewRockySnow - ambientOcclusion
+    11400000: sbsar
+    11400002: graph0
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: NewRockySnow
+    prototypeName: NewRockySnow
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://NewRockySnow\" label=\"\" >\n  <presetinput
+      identifier=\"Rock_Size\" uid=\"2056210029\" type=\"0\" value=\"2.91\" />\n  <presetinput
+      identifier=\"Snow_Amount\" uid=\"2056234780\" type=\"0\" value=\"0.946\" />\n
+      \ <presetinput identifier=\"Snow_Coverage_On_Rocks\" uid=\"2056244667\" type=\"0\"
+      value=\"1\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height,ambientOcclusion
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    textureParameters:
+    - textureName: NewRockySnow - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: NewRockySnow - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: NewRockySnow - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: NewRockySnow - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: NewRockySnow - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: NewRockySnow - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: b9ff2355d44537840bc431be1d2f8844, type: 3}
+    generatedTextures: []
