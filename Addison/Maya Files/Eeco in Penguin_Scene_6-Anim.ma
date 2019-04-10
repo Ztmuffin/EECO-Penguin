@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
 //Name: Eeco in Penguin_Scene_6-Anim.ma
-//Last modified: Wed, Apr 10, 2019 10:06:53 AM
+//Last modified: Wed, Apr 10, 2019 11:53:17 AM
 //Codeset: 1252
 file -rdi 1 -ns "Penguin1" -dr 1 -rfn "PenguinRN1" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
@@ -15,6 +15,7 @@ requires maya "2018ff09";
 requires "stereoCamera" "10.0";
 requires "mtoa" "3.0.1.1";
 requires "mtoa" "3.0.1.1";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2018";
@@ -25631,21 +25632,10 @@ createNode mesh -n "SnowShape1Orig" -p "Snow";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "pSphere6" -p "Snow";
+createNode transform -n "SpraySnow";
+	rename -uid "B5B5E71D-4BAF-8766-1302-F098E1D2A736";
+createNode transform -n "pSphere6" -p "SpraySnow";
 	rename -uid "A7DCDC6A-447A-7816-D646-03867F3EB137";
-	setAttr ".t" -type "double3" -2.5719069398901127 -1.5152478088188701 -0.33368798554803725 ;
-	setAttr -av ".tx";
-	setAttr -av ".ty";
-	setAttr -av ".tz";
-	setAttr ".r" -type "double3" -89.578138094104048 12.062001300525962 -3.0198942565208711 ;
-	setAttr -av ".rx";
-	setAttr -av ".ry";
-	setAttr -av ".rz";
-	setAttr ".s" -type "double3" 0.045580499426712114 0.12246988965242027 0.044712259521585397 ;
-	setAttr -av ".sx";
-	setAttr -av ".sy";
-	setAttr -av ".sz";
-	setAttr ".sh" -type "double3" 0.18522064900340618 -0.010235369731955367 -0.047897401626456594 ;
 createNode mesh -n "pSphereShape6" -p "pSphere6";
 	rename -uid "7655C158-4D01-50FD-412C-219CFE0854FB";
 	setAttr -k off ".v";
@@ -26776,21 +26766,8 @@ createNode mesh -n "pSphereShape6" -p "pSphere6";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "pSphere5" -p "Snow";
+createNode transform -n "pSphere5" -p "SpraySnow";
 	rename -uid "4F3D8636-4838-DDB8-C1F3-B3A6A87507A6";
-	setAttr ".t" -type "double3" 1.9584835069436792 -0.78044863045712987 -0.016338769537542319 ;
-	setAttr -av ".tx";
-	setAttr -av ".ty";
-	setAttr -av ".tz";
-	setAttr ".r" -type "double3" -89.578138094104048 12.062001300525962 -3.0198942565208711 ;
-	setAttr -av ".rx";
-	setAttr -av ".ry";
-	setAttr -av ".rz";
-	setAttr ".s" -type "double3" 0.045580499426712114 0.12246988965242027 0.044712259521585397 ;
-	setAttr -av ".sx";
-	setAttr -av ".sy";
-	setAttr -av ".sz";
-	setAttr ".sh" -type "double3" 0.18522064900340618 -0.010235369731955367 -0.047897401626456594 ;
 createNode mesh -n "pSphereShape5" -p "pSphere5";
 	rename -uid "A7A79B08-4D21-39DC-149C-6C9F5E8EC96D";
 	setAttr -k off ".v";
@@ -27921,21 +27898,8 @@ createNode mesh -n "pSphereShape5" -p "pSphere5";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "pSphere4" -p "Snow";
+createNode transform -n "pSphere4" -p "SpraySnow";
 	rename -uid "DA89742A-456A-0FFB-1FEE-CDB9CF3EB01F";
-	setAttr ".t" -type "double3" -0.048178689705423494 -2.1779537516148793 -0.25138441287004376 ;
-	setAttr -av ".tx";
-	setAttr -av ".ty";
-	setAttr -av ".tz";
-	setAttr ".r" -type "double3" -89.578138094104048 12.062001300525962 -3.0198942565208711 ;
-	setAttr -av ".rx";
-	setAttr -av ".ry";
-	setAttr -av ".rz";
-	setAttr ".s" -type "double3" 0.066209727175473992 0.17789840135768911 0.064948531533382994 ;
-	setAttr -av ".sx";
-	setAttr -av ".sy";
-	setAttr -av ".sz";
-	setAttr ".sh" -type "double3" 0.18522064900340618 -0.010235369731955371 -0.047897401626456615 ;
 createNode mesh -n "pSphereShape4" -p "pSphere4";
 	rename -uid "EB5DE82A-47EF-1EB2-D55F-F784A8DD3DC1";
 	setAttr -k off ".v";
@@ -29066,21 +29030,8 @@ createNode mesh -n "pSphereShape4" -p "pSphere4";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "pSphere3" -p "Snow";
+createNode transform -n "pSphere3" -p "SpraySnow";
 	rename -uid "09DE5410-4E29-D300-4AC9-4F837D6B95E0";
-	setAttr ".t" -type "double3" 1.6324720225858158 -0.088101151081303897 -0.074950766204894492 ;
-	setAttr -av ".tx";
-	setAttr -av ".ty";
-	setAttr -av ".tz";
-	setAttr ".r" -type "double3" -89.578138094104048 12.062001300525965 -3.0198942565208693 ;
-	setAttr -av ".rx";
-	setAttr -av ".ry";
-	setAttr -av ".rz";
-	setAttr ".s" -type "double3" 0.09618069332090555 0.25842715735583716 0.09434859588682111 ;
-	setAttr -av ".sx";
-	setAttr -av ".sy";
-	setAttr -av ".sz";
-	setAttr ".sh" -type "double3" 0.18522064900340618 -0.010235369731955378 -0.047897401626456608 ;
 createNode mesh -n "pSphereShape3" -p "pSphere3";
 	rename -uid "CD25CED0-49FF-145B-0814-90B243EE3D13";
 	setAttr -k off ".v";
@@ -29092,7 +29043,9 @@ createNode mesh -n "pSphereShape3" -p "pSphere3";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".dr" 1;
-createNode transform -n "locator3";
+createNode transform -n "EECO";
+	rename -uid "2A5E0A68-4232-BF0F-1E9C-658779780D4D";
+createNode transform -n "locator3" -p "EECO";
 	rename -uid "CCE4336C-4BD8-062C-A355-D299DB9D3A89";
 	setAttr ".t" -type "double3" -841.09608894840187 46.914944381391344 761.33606317880344 ;
 	setAttr ".r" -type "double3" 17.195489251515909 31.535401140114388 371.61738324673229 ;
@@ -29100,24 +29053,24 @@ createNode transform -n "locator3";
 createNode locator -n "locatorShape3" -p "locator3";
 	rename -uid "37975829-4290-07E8-9DE3-0D93AC0A4C53";
 	setAttr -k off ".v";
-createNode transform -n "locator4";
+createNode transform -n "locator4" -p "EECO";
 	rename -uid "F268C068-48DB-D74C-CEBC-7CA05734A7CC";
 createNode locator -n "locatorShape4" -p "locator4";
 	rename -uid "FA74B4BA-465F-6526-E929-CB94817A8791";
 	setAttr -k off ".v";
-createNode transform -n "locator1";
+createNode transform -n "locator1" -p "EECO";
 	rename -uid "F4A8BB1B-4553-2957-F887-298578D141E5";
 createNode locator -n "locatorShape1" -p "locator1";
 	rename -uid "98388BD7-4AC7-A7CE-4AFA-9CB7903D7597";
 	setAttr -k off ".v";
-createNode transform -n "locator2";
+createNode transform -n "locator2" -p "EECO";
 	rename -uid "DA4BEAA5-402E-DD8E-77B9-4E8F1BFDF5AF";
 	setAttr ".t" -type "double3" -849.36734647925107 47.517845591851874 772.8571269219093 ;
 createNode locator -n "locatorShape2" -p "locator2";
 	rename -uid "9F9C7AFD-49A9-5EEB-0E0E-ABAC1141CADC";
 	setAttr -k off ".v";
 createNode fosterParent -n "EECORig_ClawRNfosterParent1";
-	rename -uid "A47532A0-484C-449A-711B-969FF701F83D";
+	rename -uid "C18AD322-46E4-155F-2569-B8AEA2AFB133";
 createNode parentConstraint -n "Translate_FK_Ctrl_parentConstraint1" -p "EECORig_ClawRNfosterParent1";
 	rename -uid "22A0E8DE-4226-22C1-E4E5-2B9B09E77745";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "pCylinder1W0" -dv 1 -min 0 -at "double";
@@ -29138,22 +29091,22 @@ createNode parentConstraint -n "Translate_FK_Ctrl_parentConstraint1" -p "EECORig
 	setAttr ".rsrr" -type "double3" 90 6.3611093629270335e-15 100 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "3AA1EC81-4B77-1156-C844-8894DF2274C5";
+	rename -uid "6F0B7BA8-45E6-E5C4-4572-6E9E266AA135";
 	setAttr -s 10 ".lnk";
 	setAttr -s 10 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "48F7F0BD-4A58-3B82-E9D4-26AAA1CA1683";
+	rename -uid "66DBA24E-4D89-E00E-841A-3AB4CF9F7523";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 1 0 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "B23839AB-4567-D312-37DE-929B8D94CC8E";
+	rename -uid "D49861CA-42AD-095F-49C2-93A0EB8E8B62";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "3A8BB3BA-44D4-9AEF-733C-8B8065FB660C";
+	rename -uid "222AB166-428E-D06C-E3F0-3FA117A927CB";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "232505B5-4509-E4F2-1E8D-618B68CAE291";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "3FC8A96D-4E5D-9102-71EC-42BC01587196";
+	rename -uid "7D75E445-4CE0-2CF9-3C91-368F8F183F8B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E54D00F2-45FE-BCB4-6984-A28936D45965";
 	setAttr ".g" yes;
@@ -32926,9 +32879,32 @@ createNode reference -n "PenguinRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"PenguinRN"
 		"PenguinRN" 0
-		"PenguinRN" 227
+		"PenguinRN" 238
+		2 "|Penguin:Penguin|Penguin:Geometry|Penguin:Penguin_Geo|Penguin:Penguin_GeoShape" 
+		"visibility" " -k 0 1"
 		2 "|Penguin:Penguin|Penguin:Geometry|Penguin:Penguin_Geo|Penguin:Penguin_GeoShape" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:L_Leg_IK_01_Jnt" 
+		"rotate" " -type \"double3\" 0 0 3.17016771072362769"
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:L_Leg_IK_01_Jnt" 
+		"rotateX" " -av"
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:L_Leg_IK_01_Jnt" 
+		"rotateY" " -av"
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:L_Leg_IK_01_Jnt" 
+		"rotateZ" " -av"
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:L_Leg_IK_01_Jnt|Penguin:L_Leg_IK_02_Jnt" 
+		"rotate" " -type \"double3\" 0 0 -16.58402981601679471"
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:R_Leg_IK_01_Jnt" 
+		"rotate" " -type \"double3\" -91.51147577177556514 0.16912391252009631 4.75114913042286169"
+		
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:R_Leg_IK_01_Jnt" 
+		"rotateX" " -av"
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:R_Leg_IK_01_Jnt" 
+		"rotateY" " -av"
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:R_Leg_IK_01_Jnt" 
+		"rotateZ" " -av"
+		2 "|Penguin:Penguin|Penguin:Skeleton|Penguin:IK|Penguin:R_Leg_IK_01_Jnt|Penguin:R_Leg_IK_02_Jnt" 
+		"rotate" " -type \"double3\" 0 22.01677253277284052 0"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl" 
 		"translate" " -type \"double3\" -661.85912724456807155 79.7721264119768847 740.59653475888308094"
 		
@@ -35134,964 +35110,1183 @@ createNode reference -n "EECORig_ClawRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"EECORig_ClawRN"
 		"EECORig_ClawRN" 0
-		"EECORig_ClawRN" 475
-		0 "|EECORig_ClawRNfosterParent1|Translate_FK_Ctrl_parentConstraint1" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" 
+		"EECORig_ClawRN" 577
+		0 "|EECORig_Claw:EECO_Rig" "|EECO" "-s -r "
+		0 "|EECORig_ClawRNfosterParent1|Translate_FK_Ctrl_parentConstraint1" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" 
 		"-s -r "
-		1 |EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl "blendParent1" "blendParent1" 
-		" -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
-		2 "|EECORig_Claw:EECO_Rig" "visibility" " -av 1"
-		2 "|EECORig_Claw:EECO_Rig" "translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig" "rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig" "scale" " -type \"double3\" 1 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "translate" " -type \"double3\" -864.56088512054202511 177.03483676999374552 771.07441131798725564"
+		1 |EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl "blendParent1" 
+		"blendParent1" " -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
+		2 "|EECO|EECORig_Claw:EECO_Rig" "visibility" " -av 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig" "translate" " -type \"double3\" 0 0 0"
+		2 "|EECO|EECORig_Claw:EECO_Rig" "rotate" " -type \"double3\" 0 0 0"
+		2 "|EECO|EECORig_Claw:EECO_Rig" "scale" " -type \"double3\" 1 1 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "translate" 
+		" -type \"double3\" -864.56088512054202511 177.03483676999374552 771.07441131798725564"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "translateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "translateX" 
+		" -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "translateY" 
+		" -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "translateZ" 
+		" -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "rotate" " -type \"double3\" 90 0 100"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "translateY" " -av"
-		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "translateZ" " -av"
-		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "rotate" " -type \"double3\" 90 0 100"
-		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "rotateX" " -av"
-		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "rotateY" " -av"
-		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "rotateZ" " -av"
-		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "blendParent1" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "rotateX" 
+		" -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "rotateY" 
+		" -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "rotateZ" 
+		" -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "blendParent1" 
 		" -k 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Back_Right_Leg_Geo|EECORig_Claw:Back_Right_Leg2_Geo|EECORig_Claw:Back_Right_Leg2_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Back_Right_Leg_Geo|EECORig_Claw:Back_Right_Leg3_Geo|EECORig_Claw:Back_Right_Leg3_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Back_Right_Leg_Geo|EECORig_Claw:Back_Right_Leg4_Geo|EECORig_Claw:Back_Right_Leg4_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Back_Right_Leg_Geo|EECORig_Claw:Back_Right_Leg5_Geo|EECORig_Claw:Back_Right_Leg5_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Front_Right_Leg_Geo|EECORig_Claw:Front_Right_Leg2_Geo|EECORig_Claw:Front_Right_Leg2_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Front_Right_Leg_Geo|EECORig_Claw:Front_Right_Leg3_Geo|EECORig_Claw:Front_Right_Leg3_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Front_Right_Leg_Geo|EECORig_Claw:Front_Right_Leg4_Geo|EECORig_Claw:Front_Right_Leg4_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Front_Right_Leg_Geo|EECORig_Claw:Front_Right_Leg5_Geo|EECORig_Claw:Front_Right_Leg5_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Back_Left_Leg_Geo|EECORig_Claw:Back_Left_Leg2_Geo|EECORig_Claw:Back_Left_Leg2_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Back_Left_Leg_Geo|EECORig_Claw:Back_Left_Leg3_Geo|EECORig_Claw:Back_Left_Leg3_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Back_Left_Leg_Geo|EECORig_Claw:Back_Left_Leg4_Geo|EECORig_Claw:Back_Left_Leg4_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Back_Left_Leg_Geo|EECORig_Claw:Back_Left_Leg5_Geo|EECORig_Claw:Back_Left_Leg5_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Front_Left_Leg_Geo|EECORig_Claw:Front_Left_Leg2_Geo|EECORig_Claw:Front_Left_Leg2_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Front_Left_Leg_Geo|EECORig_Claw:Front_Left_Leg3_Geo|EECORig_Claw:Front_Left_Leg3_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Front_Left_Leg_Geo|EECORig_Claw:Front_Left_Leg4_Geo|EECORig_Claw:Front_Left_Leg4_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Front_Left_Leg_Geo|EECORig_Claw:Front_Left_Leg5_Geo|EECORig_Claw:Front_Left_Leg5_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Body01_Geo|EECORig_Claw:Body01_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face02_Geo|EECORig_Claw:Face02_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Back_Hatch1|EECORig_Claw:Back_Hatch1Shape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Droplet_1|EECORig_Claw:Droplet_1Shape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Droplet_2|EECORig_Claw:Droplet_2Shape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo" 
 		"visibility" " -av 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo|EECORig_Claw:Face01_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8" 
 		"visibility" " -av 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8|EECORig_Claw:Face01_Geo8Shape" 
+		"visibility" " -k 0 0"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1" 
 		"visibility" " -av 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1|EECORig_Claw:Face01_Geo7" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1|EECORig_Claw:Face01_Geo1Shape" 
+		"visibility" " -k 0 0"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1|EECORig_Claw:Face01_Geo7" 
 		"visibility" " 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo2" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1|EECORig_Claw:Face01_Geo7|EECORig_Claw:Face01_Geo7Shape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo2" 
 		"visibility" " -av 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo3" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo2|EECORig_Claw:Face01_Geo2Shape" 
+		"visibility" " -k 0 0"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo3" 
 		"visibility" " -av 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo3|EECORig_Claw:Face01_Geo3Shape" 
+		"visibility" " -k 0 0"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:R_Arm_Grp|EECORig_Claw:R_Arm_Piece1_Geo|EECORig_Claw:R_Arm_Piece1_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:R_Arm_Grp|EECORig_Claw:R_Arm_Piece22_Geo|EECORig_Claw:R_Arm_Piece22_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:R_Arm_Grp|EECORig_Claw:group1|EECORig_Claw:R_Arm_Piece3_Geo|EECORig_Claw:R_Arm_Piece3_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:R_Arm_Grp|EECORig_Claw:group1|EECORig_Claw:R_Arm_Piece4_Geo|EECORig_Claw:R_Arm_Piece4_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:R_Arm_Grp|EECORig_Claw:group1|EECORig_Claw:R_Arm_Piece5_Geo|EECORig_Claw:R_Arm_Piece5_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:L_Arm_Grp|EECORig_Claw:L_Arm_Piece1_Geo|EECORig_Claw:L_Arm_Piece1_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:L_Arm_Grp|EECORig_Claw:L_Arm_Piece22_Geo1|EECORig_Claw:L_Arm_Piece22_Geo1Shape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:L_Arm_Grp|EECORig_Claw:L_Arm_Piece3_Geo|EECORig_Claw:L_Arm_Piece3_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:L_Arm_Grp|EECORig_Claw:L_Arm_Piece4_Geo|EECORig_Claw:L_Arm_Piece4_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:L_Arm_Grp|EECORig_Claw:L_Arm_Piece5_Geo|EECORig_Claw:L_Arm_Piece5_GeoShape" 
+		"visibility" " -k 0 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
+		"rotate" " -type \"double3\" -119.30257653563194253 37.08097763490916776 -49.02002714534093997"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
+		"rotateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
+		"rotateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
+		"rotateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt|EECORig_Claw:R_Arm_2_IK_Jnt" 
+		"translateX" " -av 0.71198409795761108"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt|EECORig_Claw:R_Arm_2_IK_Jnt" 
+		"rotate" " -type \"double3\" 0 0.68198957667140836 8.22887568378801149"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
+		"rotate" " -type \"double3\" 111.15429823037632673 -27.67813973401374383 -50.08347194460186813"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
+		"rotateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
+		"rotateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
+		"rotateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt|EECORig_Claw:L_Arm_2_IK_Jnt" 
+		"translateX" " -av -0.7800937294960022"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt|EECORig_Claw:L_Arm_2_IK_Jnt" 
+		"rotate" " -type \"double3\" -0.00037280192132175762 3.92752245070365014 47.38704958031819814"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"translate" " -type \"double3\" -837.87306217456716695 50.07101205600582716 769.23157330421736333"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"translateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"translateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"translateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"rotate" " -type \"double3\" 153.02751642240664864 40.9286129642279306 111.35329625300697387"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"rotateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"rotateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"rotateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"scale" " -type \"double3\" 0.99999999999999989 1.00000000000000022 1.00000000000000044"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"scaleX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"scaleY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
+		"scaleZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt|EECORig_Claw:Front_Right_Leg_IK_Jnt2" 
+		"rotate" " -type \"double3\" 0 -20.50824794595153477 -121.72320458816697908"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"translate" " -type \"double3\" -841.20577889188029985 50.54051422618372413 769.66763715060039885"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"translateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"translateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"translateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"rotate" " -type \"double3\" 12.67754012331575275 -20.13221897204924815 151.57334070601083909"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"rotateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"rotateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"rotateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"scale" " -type \"double3\" 1.00000000000000022 1.00000000000000044 1.00000000000000089"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"scaleX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"scaleY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
+		"scaleZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt|EECORig_Claw:Back_Right_Leg_IK_Jnt2" 
+		"rotate" " -type \"double3\" 0 77.41154582481958357 -90.71844823741881214"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"translate" " -type \"double3\" -840.47002016801434365 50.19217430101969768 763.78160622743121166"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"translateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"translateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"translateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"rotate" " -type \"double3\" -66.08857721131495566 -68.20986133594010425 140.07840669377100085"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"rotateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"rotateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"rotateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"scale" " -type \"double3\" 1 1 1.00000000000000067"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"scaleX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"scaleY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
+		"scaleZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt|EECORig_Claw:Front_Left_Leg_IK_Jnt2" 
+		"rotate" " -type \"double3\" 2.9337866631088033e-05 -6.34293852013958936 -37.62623583966862384"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"translate" " -type \"double3\" -842.90026205983883756 50.61956924208752895 766.11158846259331767"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"translateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"translateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"translateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"rotate" " -type \"double3\" 70.03374710280307625 -49.87727530445014423 -123.85431566138031201"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"rotateX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"rotateY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"rotateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"scale" " -type \"double3\" 1 1.00000000000000022 1.00000000000000044"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"scaleX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"scaleY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
+		"scaleZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt|EECORig_Claw:Back_Left_Leg_IK_Jnt2" 
+		"rotate" " -type \"double3\" -2.794554586171781e-05 58.11505745123385225 -48.53585249770235777"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"visibility" " -av 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"translate" " -type \"double3\" -129.69469527230896233 -4.09630651121572953 2.34624219352231567"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"rotate" " -type \"double3\" 25.69866031196187706 -14.37455524193635625 -0.83931768064635948"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"Follow_Translate" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"Follow_Rotate" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"RArmIKFK" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"LArmIKFK" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"RIght_Front_Leg_IK_FK" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"Left_Front_Leg_IK_FK" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"Right_back_Leg_IK_FK" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"Left_back_Leg_IK_FK" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"visibility" " -av 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"translate" " -type \"double3\" -0.43148167102621537 0.0086843015679020901 0.032443200174544821"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"Follow_Translate" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"Follow_Rotate" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
 		"translate" " -type \"double3\" -0.50485179112861589 0.20186871829622713 -2.79304684108336065"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"visibility" " -av 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"translate" " -type \"double3\" 0.5809939153462198 -0.96890522141860635 2.37445265163333508"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
 		"translate" " -type \"double3\" 0.23998243795364127 -0.93364629006964373 2.39068607504176223"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"visibility" " -av 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"translate" " -type \"double3\" -1.07327165071935737 0.87588822235599884 -3.04901598315160527"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"translate" " -type \"double3\" 0.77418574739538193 -0.18589537328079209 0.20015059974506305"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"visibility" " -av 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"translate" " -type \"double3\" 0.51812447713572352 -0.3727779520397006 0.46841628665799612"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"rotate" " -type \"double3\" -54.23297392253956417 36.69345129382181625 16.0778609559729837"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"Stretchy" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"Length_1" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"Length_2" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"FollowOrient" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"visibility" " -av 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"translate" " -type \"double3\" -0.20408847463928845 0.19471787896233128 -0.092714263314151682"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"translateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"translateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"translateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"rotate" " -type \"double3\" -15.37046249218485272 30.10942677109819243 -22.9444180414934884"
 		
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"rotateX" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"rotateY" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"rotateZ" " -av"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"Stretchy" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"Length_1" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"Length_2" " -av -k 1 1"
-		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"FollowOrient" " -av -k 1 1"
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.scaleX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.scaleX" 
 		"EECORig_ClawRN.placeHolderList[1]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.scaleY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.scaleY" 
 		"EECORig_ClawRN.placeHolderList[2]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.scaleZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.scaleZ" 
 		"EECORig_ClawRN.placeHolderList[3]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[4]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[5]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[6]" ""
-		5 3 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotatePivot" 
+		5 3 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotatePivot" 
 		"EECORig_ClawRN.placeHolderList[7]" ""
-		5 3 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotatePivotTranslate" 
+		5 3 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotatePivotTranslate" 
 		"EECORig_ClawRN.placeHolderList[8]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[9]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[10]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[11]" ""
-		5 3 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotateOrder" 
+		5 3 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.rotateOrder" 
 		"EECORig_ClawRN.placeHolderList[12]" ""
-		5 3 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.blendParent1" 
+		5 3 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.blendParent1" 
 		"EECORig_ClawRN.placeHolderList[13]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.blendParent1" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.blendParent1" 
 		"EECORig_ClawRN.placeHolderList[14]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[15]" ""
-		5 3 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.parentInverseMatrix" 
+		5 3 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl.parentInverseMatrix" 
 		"EECORig_ClawRN.placeHolderList[16]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo.visibility" 
 		"EECORig_ClawRN.placeHolderList[17]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8.visibility" 
 		"EECORig_ClawRN.placeHolderList[18]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1.visibility" 
 		"EECORig_ClawRN.placeHolderList[19]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo2.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo2.visibility" 
 		"EECORig_ClawRN.placeHolderList[20]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo3.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo3.visibility" 
 		"EECORig_ClawRN.placeHolderList[21]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.RArmIKFK" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.RArmIKFK" 
 		"EECORig_ClawRN.placeHolderList[22]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.LArmIKFK" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.LArmIKFK" 
 		"EECORig_ClawRN.placeHolderList[23]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.RIght_Front_Leg_IK_FK" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.RIght_Front_Leg_IK_FK" 
 		"EECORig_ClawRN.placeHolderList[24]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Left_Front_Leg_IK_FK" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Left_Front_Leg_IK_FK" 
 		"EECORig_ClawRN.placeHolderList[25]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Right_back_Leg_IK_FK" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Right_back_Leg_IK_FK" 
 		"EECORig_ClawRN.placeHolderList[26]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Left_back_Leg_IK_FK" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Left_back_Leg_IK_FK" 
 		"EECORig_ClawRN.placeHolderList[27]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[28]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[29]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[30]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[31]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[32]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[33]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[34]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[35]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[36]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[37]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[38]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[39]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[40]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[41]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[42]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[43]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[44]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[45]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[46]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[47]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[48]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[49]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[50]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[51]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[52]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[53]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Back_Hatch_FK_Ctrl_Grp|EECORig_Claw:Back_Hatch_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[54]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[55]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[56]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[57]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[58]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[59]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[60]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[61]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[62]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Top_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[63]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[64]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[65]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[66]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[67]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[68]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[69]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[70]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[71]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[72]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[73]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[74]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[75]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[76]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[77]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[78]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.scaleX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.scaleX" 
 		"EECORig_ClawRN.placeHolderList[79]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.scaleY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.scaleY" 
 		"EECORig_ClawRN.placeHolderList[80]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.scaleZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.scaleZ" 
 		"EECORig_ClawRN.placeHolderList[81]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[82]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[83]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[84]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[85]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[86]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[87]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[88]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[89]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[90]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.scaleX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.scaleX" 
 		"EECORig_ClawRN.placeHolderList[91]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.scaleY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.scaleY" 
 		"EECORig_ClawRN.placeHolderList[92]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.scaleZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.scaleZ" 
 		"EECORig_ClawRN.placeHolderList[93]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[94]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[95]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[96]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[97]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[98]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[99]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[100]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[101]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[102]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.scaleX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.scaleX" 
 		"EECORig_ClawRN.placeHolderList[103]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.scaleY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.scaleY" 
 		"EECORig_ClawRN.placeHolderList[104]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.scaleZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.scaleZ" 
 		"EECORig_ClawRN.placeHolderList[105]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[106]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[107]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[108]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[109]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[110]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[111]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[112]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[113]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[114]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[115]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[116]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Top_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[117]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[118]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[119]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[120]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[121]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[122]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[123]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[124]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[125]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[126]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[127]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[128]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[129]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[130]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[131]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[132]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[133]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[134]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_1_FK_Ctrl_Grp|EECORig_Claw:Drop_1_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[135]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[136]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[137]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[138]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[139]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[140]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[141]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[142]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[143]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Drops|EECORig_Claw:Drop_2_FK_Ctrl_Grp|EECORig_Claw:Drop_2_FK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[144]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[145]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[146]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[147]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[148]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[149]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[150]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[151]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[152]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg_IK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[153]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[154]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[155]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[156]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[157]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[158]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[159]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:Front_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Left_Leg2_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[160]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[161]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[162]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[163]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[164]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[165]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[166]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[167]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[168]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[169]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[170]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[171]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[172]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[173]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[174]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[175]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg_IK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[176]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[177]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[178]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[179]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[180]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[181]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[182]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:Back_Left_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Left_Leg2_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[183]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[184]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[185]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[186]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[187]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[188]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[189]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[190]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[191]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[192]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[193]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[194]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[195]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[196]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[197]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[198]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg_IK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[199]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[200]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[201]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[202]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[203]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[204]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[205]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:Front_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Front_Right_Leg2_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[206]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[207]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[208]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[209]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[210]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[211]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[212]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[213]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[214]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[215]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[216]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[217]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[218]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[219]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[220]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.Follow_Translate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.Follow_Translate" 
 		"EECORig_ClawRN.placeHolderList[221]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.Follow_Rotate" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg_IK_Ctrl.Follow_Rotate" 
 		"EECORig_ClawRN.placeHolderList[222]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[223]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[224]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[225]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[226]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[227]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[228]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:Back_Right_Leg2_IK_Ctrl_Grp|EECORig_Claw:Back_Right_Leg2_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[229]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[230]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[231]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[232]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[233]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[234]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[235]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[236]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[237]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[238]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[239]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[240]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[241]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[242]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[243]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[244]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[245]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[246]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[247]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[248]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[249]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[250]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.FollowOrient" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.FollowOrient" 
 		"EECORig_ClawRN.placeHolderList[251]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[252]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[253]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[254]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[255]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[256]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[257]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.Length_1" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.Length_1" 
 		"EECORig_ClawRN.placeHolderList[258]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.Length_2" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.Length_2" 
 		"EECORig_ClawRN.placeHolderList[259]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.Stretchy" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.Stretchy" 
 		"EECORig_ClawRN.placeHolderList[260]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[261]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[262]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[263]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[264]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[265]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[266]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[267]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[268]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[269]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[270]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[271]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[272]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[273]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[274]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[275]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.FollowOrient" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.FollowOrient" 
 		"EECORig_ClawRN.placeHolderList[276]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.rotateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.rotateX" 
 		"EECORig_ClawRN.placeHolderList[277]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.rotateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.rotateY" 
 		"EECORig_ClawRN.placeHolderList[278]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.rotateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.rotateZ" 
 		"EECORig_ClawRN.placeHolderList[279]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.translateX" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.translateX" 
 		"EECORig_ClawRN.placeHolderList[280]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.translateY" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.translateY" 
 		"EECORig_ClawRN.placeHolderList[281]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.translateZ" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.translateZ" 
 		"EECORig_ClawRN.placeHolderList[282]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.Length_1" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.Length_1" 
 		"EECORig_ClawRN.placeHolderList[283]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.Length_2" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.Length_2" 
 		"EECORig_ClawRN.placeHolderList[284]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.Stretchy" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.Stretchy" 
 		"EECORig_ClawRN.placeHolderList[285]" ""
-		5 4 "EECORig_ClawRN" "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.visibility" 
+		5 4 "EECORig_ClawRN" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl.visibility" 
 		"EECORig_ClawRN.placeHolderList[286]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -38420,19 +38615,19 @@ createNode animCurveTU -n "pSphere3_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  36 0.77819646538265463 39 0.77819646538265463
-		 200 0.09618069332090555;
+		 200 0.77819646538265463;
 createNode animCurveTU -n "pSphere3_scaleY";
 	rename -uid "B557DA9B-4108-5C0B-B4D6-D0A1B4E894FB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  36 0.77819646538265463 39 0.77819646538265463
-		 200 0.25842715735583716;
+		 200 0.77819646538265497;
 createNode animCurveTU -n "pSphere3_scaleZ";
 	rename -uid "87034C76-4FCA-65FD-617E-C8A15D22A020";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  36 0.77819646538265463 39 0.77819646538265463
-		 200 0.09434859588682111;
+		 200 0.77819646538265463;
 createNode animCurveTU -n "pSphere3_visibility";
 	rename -uid "D437B941-4D5D-F813-B211-00B905AA23A4";
 	setAttr ".tan" 9;
@@ -38444,49 +38639,49 @@ createNode animCurveTL -n "pSphere3_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 5 ".ktv[0:4]"  36 -848.70519123804706 39 -848.70519123804706
-		 42 -842.69958704487397 46 -835.84550833561423 200 1.6324720225858158;
+		 42 -842.69958704487397 46 -835.84550833561423 200 -835.845508335614;
 createNode animCurveTL -n "pSphere3_translateY";
 	rename -uid "B01C46BC-45C2-5852-B388-1D8EFE034041";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 5 ".ktv[0:4]"  36 49.47913914695058 39 48.203590858454064
-		 42 49.146626629586507 46 47.015088956488441 200 -0.088101151081303897;
+		 42 49.146626629586507 46 47.015088956488441 200 47.015088956488412;
 createNode animCurveTL -n "pSphere3_translateZ";
 	rename -uid "84468007-4490-3475-266E-CB9738C2D672";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  36 771.12362985561481 39 771.12362985561481
-		 200 -0.074950766204894492;
+		 200 771.12362985561469;
 createNode animCurveTA -n "pSphere3_rotateX";
 	rename -uid "2BDEC491-4B65-A5EF-2B08-BAA08278EA17";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  36 0 39 0 200 -89.578138094104048;
+	setAttr -s 3 ".ktv[0:2]"  36 0 39 0 200 0;
 createNode animCurveTA -n "pSphere3_rotateY";
 	rename -uid "EF59C2AA-4685-F6EA-8643-008CA15A4CDA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  36 0 39 0 200 12.062001300525965;
+	setAttr -s 3 ".ktv[0:2]"  36 0 39 0 200 0;
 createNode animCurveTA -n "pSphere3_rotateZ";
 	rename -uid "9A0688B8-4C69-13BB-2D58-02BC3A859C6D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  36 0 39 0 200 -3.0198942565208693;
+	setAttr -s 3 ".ktv[0:2]"  36 0 39 0 200 0;
 createNode animCurveTU -n "pSphere4_scaleX";
 	rename -uid "1DEF5811-4017-FBC7-2187-819DE7FCBACB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0.5357018532814487 200 0.066209727175473992;
+	setAttr -s 2 ".ktv[0:1]"  36 0.5357018532814487 200 0.5357018532814487;
 createNode animCurveTU -n "pSphere4_scaleY";
 	rename -uid "16FD15CD-47FA-B98B-EAE0-9089A0E5FB08";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0.5357018532814487 200 0.17789840135768911;
+	setAttr -s 2 ".ktv[0:1]"  36 0.5357018532814487 200 0.53570185328144881;
 createNode animCurveTU -n "pSphere4_scaleZ";
 	rename -uid "765FE82B-4417-218D-7B72-EA8DE4C68C1F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0.5357018532814487 200 0.064948531533382994;
+	setAttr -s 2 ".ktv[0:1]"  36 0.5357018532814487 200 0.53570185328144859;
 createNode animCurveTU -n "pSphere4_visibility";
 	rename -uid "99EE1792-4B66-4D80-F47D-B789E2AC49BA";
 	setAttr ".tan" 9;
@@ -38497,57 +38692,57 @@ createNode animCurveTL -n "pSphere4_translateX";
 	rename -uid "D5A9727C-4867-B0CA-18FC-5E8C420F5FD3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 -848.70519123804706 200 -0.048178689705423494;
+	setAttr -s 2 ".ktv[0:1]"  36 -848.70519123804706 200 -848.70519123804695;
 createNode animCurveTL -n "pSphere4_translateY";
 	rename -uid "B7D41B6F-45E8-A70F-04C6-80BAC890C9CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  36 48.014273648870727 39 48.50883950575426
 		 42 49.49526952245148 45 48.183973528409794 47 48.505996633909454 49 48.158904293330572
-		 200 -2.1779537516148793;
+		 200 48.158904293330558;
 createNode animCurveTL -n "pSphere4_translateZ";
 	rename -uid "78F59303-48FF-6A50-E5D4-3EA08ADA7E2E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  36 769.58530182385925 42 762.4734523467115
 		 45 758.99431857659704 47 757.96811557385286 49 756.42718144851221 55 753.15006826280671
-		 200 -0.25138441287004376;
+		 200 753.15006826280649;
 createNode animCurveTA -n "pSphere4_rotateX";
 	rename -uid "FA30B98B-46A6-5B41-7B31-A48B1E6158BF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0 200 -89.578138094104048;
+	setAttr -s 2 ".ktv[0:1]"  36 0 200 0;
 createNode animCurveTA -n "pSphere4_rotateY";
 	rename -uid "E4865EE0-4434-0E14-DE94-8AB5FF57DC1D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0 200 12.062001300525962;
+	setAttr -s 2 ".ktv[0:1]"  36 0 200 0;
 createNode animCurveTA -n "pSphere4_rotateZ";
 	rename -uid "4DF1998E-46FB-343B-97C6-B4A39549B04D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0 200 -3.0198942565208711;
+	setAttr -s 2 ".ktv[0:1]"  36 0 200 0;
 createNode animCurveTL -n "pSphere5_translateX";
 	rename -uid "106A9272-4971-5480-0048-A0970D078984";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  36 -848.70519123804706 40 -848.15149568429706
 		 43 -843.13889148562157 47 -838.66258014138316 52 -834.68249421734652 57 -832.88079193325939
-		 200 1.9584835069436792;
+		 200 -832.88079193325927;
 createNode animCurveTL -n "pSphere5_translateY";
 	rename -uid "6FB5A89B-478B-B944-E5A5-2597DDEB921D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  36 48.205466622703362 40 47.587746033748438
 		 43 53.927340535574686 47 46.920195486506621 49 49.008274007525252 52 46.502636049993313
-		 200 -0.78044863045712987;
+		 200 46.502636049993299;
 createNode animCurveTL -n "pSphere5_translateZ";
 	rename -uid "049251E2-4E98-4BBF-0D19-12B823CC7C36";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  36 769.58530182385925 40 769.16003448258834
 		 43 768.22287075514066 47 767.20333923191424 52 766.04863056547708 57 765.57089868414687
-		 200 -0.016338769537542319;
+		 200 765.57089868414664;
 createNode animCurveTU -n "pSphere5_visibility";
 	rename -uid "682C4470-4F0E-D8CA-D50C-5E99EBB3BFF6";
 	setAttr ".tan" 9;
@@ -38558,38 +38753,38 @@ createNode animCurveTA -n "pSphere5_rotateX";
 	rename -uid "3BF30390-4758-1129-5B72-168E7B838770";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0 200 -89.578138094104048;
+	setAttr -s 2 ".ktv[0:1]"  36 0 200 0;
 createNode animCurveTA -n "pSphere5_rotateY";
 	rename -uid "B8C4BE58-4DBE-0AE3-BC7C-31AEDA6689F0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0 200 12.062001300525962;
+	setAttr -s 2 ".ktv[0:1]"  36 0 200 0;
 createNode animCurveTA -n "pSphere5_rotateZ";
 	rename -uid "A9704665-4EE8-D2EA-410B-CCA1C62B9AC9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0 200 -3.0198942565208711;
+	setAttr -s 2 ".ktv[0:1]"  36 0 200 0;
 createNode animCurveTU -n "pSphere5_scaleX";
 	rename -uid "7CF408A5-4C3E-E475-BDA6-57BCAA7EF2DE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0.3687910984993254 200 0.045580499426712114;
+	setAttr -s 2 ".ktv[0:1]"  36 0.3687910984993254 200 0.3687910984993254;
 createNode animCurveTU -n "pSphere5_scaleY";
 	rename -uid "5A1B003C-455D-96F1-8E29-D3B957A7974C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0.3687910984993254 200 0.12246988965242027;
+	setAttr -s 2 ".ktv[0:1]"  36 0.3687910984993254 200 0.36879109849932551;
 createNode animCurveTU -n "pSphere5_scaleZ";
 	rename -uid "CE57C223-4D40-8992-9D49-CFBD42032226";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  36 0.3687910984993254 200 0.044712259521585397;
+	setAttr -s 2 ".ktv[0:1]"  36 0.3687910984993254 200 0.36879109849932545;
 createNode animCurveTL -n "pSphere6_translateX";
 	rename -uid "B60D7F2D-4973-A237-E3DC-9B926B2FA3E5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 5 ".ktv[0:4]"  36 -848.70519123804706 40 -848.70519123804706
-		 52 -865.32301543956407 57 -869.70400047211422 200 -2.5719069398901127;
+		 52 -865.32301543956407 57 -869.70400047211422 200 -869.7040004721141;
 createNode animCurveTL -n "pSphere6_translateY";
 	rename -uid "EFEAC4DE-476F-8E93-C521-47AA5E2EDDA4";
 	setAttr ".tan" 18;
@@ -38597,13 +38792,13 @@ createNode animCurveTL -n "pSphere6_translateY";
 	setAttr -s 12 ".ktv[0:11]"  36 47.724091083990437 40 47.724091083990437
 		 44 57.980905090769319 48 48.834586464578699 49 50.760192276360144 50 49.154320214123928
 		 51 50.145679993977183 52 49.427288860547812 53 49.882537630052589 54 49.856746136573456
-		 57 50.096429991279486 200 -1.5152478088188701;
+		 57 50.096429991279486 200 50.096429991279471;
 createNode animCurveTL -n "pSphere6_translateZ";
 	rename -uid "D77157DF-45B8-6738-D4EC-73A032652136";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 5 ".ktv[0:4]"  36 769.58530182385925 40 769.58530182385925
-		 52 760.00115326862544 57 757.47446801422348 200 -0.33368798554803725;
+		 52 760.00115326862544 57 757.47446801422348 200 757.47446801422336;
 createNode animCurveTU -n "pSphere6_visibility";
 	rename -uid "B1C59892-44CC-26AE-13EC-B98FA23A2ED7";
 	setAttr ".tan" 9;
@@ -38614,35 +38809,35 @@ createNode animCurveTA -n "pSphere6_rotateX";
 	rename -uid "12010772-4D09-C3F8-4EE4-BAAE2F6277A4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  36 0 40 0 52 0 200 -89.578138094104048;
+	setAttr -s 4 ".ktv[0:3]"  36 0 40 0 52 0 200 0;
 createNode animCurveTA -n "pSphere6_rotateY";
 	rename -uid "DECDA766-4167-6C95-7525-EE9341F8CAC9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  36 0 40 0 52 0 200 12.062001300525962;
+	setAttr -s 4 ".ktv[0:3]"  36 0 40 0 52 0 200 0;
 createNode animCurveTA -n "pSphere6_rotateZ";
 	rename -uid "D5AF4F1F-4E8B-3F65-3A76-218D10CEF82C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  36 0 40 0 52 0 200 -3.0198942565208711;
+	setAttr -s 4 ".ktv[0:3]"  36 0 40 0 52 0 200 0;
 createNode animCurveTU -n "pSphere6_scaleX";
 	rename -uid "2AD01CA1-4A2C-6673-CB47-86A82EE3E755";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  36 0.3687910984993254 40 0.3687910984993254
-		 52 0.3687910984993254 200 0.045580499426712114;
+		 52 0.3687910984993254 200 0.3687910984993254;
 createNode animCurveTU -n "pSphere6_scaleY";
 	rename -uid "B9166F74-493D-CB8E-F3E8-8BA4B8B0A590";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  36 0.3687910984993254 40 0.3687910984993254
-		 52 0.3687910984993254 200 0.12246988965242027;
+		 52 0.3687910984993254 200 0.36879109849932551;
 createNode animCurveTU -n "pSphere6_scaleZ";
 	rename -uid "CE940903-48A2-6EFA-F485-D19CF3C77632";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  36 0.3687910984993254 40 0.3687910984993254
-		 52 0.3687910984993254 200 0.044712259521585397;
+		 52 0.3687910984993254 200 0.36879109849932545;
 createNode animCurveTU -n "Face01_Geo2_visibility";
 	rename -uid "410F9CEE-494B-2408-8BDF-25914B43AFCD";
 	setAttr ".tan" 9;
@@ -38767,8 +38962,8 @@ createNode animCurveTU -n "Face01_Geo8_visibility";
 	setAttr -s 5 ".ktv[0:4]"  88 1 109 1 110 0 144 1 173 0;
 	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 select -ne :time1;
-	setAttr ".o" 200;
-	setAttr ".unw" 200;
+	setAttr ".o" 196;
+	setAttr ".unw" 196;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -39319,43 +39514,43 @@ connectAttr "deleteComponent1.og" "SnowShape1Orig.i";
 connectAttr "pSphere6_translateX.o" "pSphere6.tx";
 connectAttr "pSphere6_translateY.o" "pSphere6.ty";
 connectAttr "pSphere6_translateZ.o" "pSphere6.tz";
-connectAttr "pSphere6_visibility.o" "pSphere6.v";
 connectAttr "pSphere6_rotateX.o" "pSphere6.rx";
 connectAttr "pSphere6_rotateY.o" "pSphere6.ry";
 connectAttr "pSphere6_rotateZ.o" "pSphere6.rz";
 connectAttr "pSphere6_scaleX.o" "pSphere6.sx";
 connectAttr "pSphere6_scaleY.o" "pSphere6.sy";
 connectAttr "pSphere6_scaleZ.o" "pSphere6.sz";
+connectAttr "pSphere6_visibility.o" "pSphere6.v";
 connectAttr "pSphere5_translateX.o" "pSphere5.tx";
 connectAttr "pSphere5_translateY.o" "pSphere5.ty";
 connectAttr "pSphere5_translateZ.o" "pSphere5.tz";
-connectAttr "pSphere5_visibility.o" "pSphere5.v";
 connectAttr "pSphere5_rotateX.o" "pSphere5.rx";
 connectAttr "pSphere5_rotateY.o" "pSphere5.ry";
 connectAttr "pSphere5_rotateZ.o" "pSphere5.rz";
 connectAttr "pSphere5_scaleX.o" "pSphere5.sx";
 connectAttr "pSphere5_scaleY.o" "pSphere5.sy";
 connectAttr "pSphere5_scaleZ.o" "pSphere5.sz";
+connectAttr "pSphere5_visibility.o" "pSphere5.v";
 connectAttr "pSphere4_translateX.o" "pSphere4.tx";
 connectAttr "pSphere4_translateY.o" "pSphere4.ty";
 connectAttr "pSphere4_translateZ.o" "pSphere4.tz";
-connectAttr "pSphere4_visibility.o" "pSphere4.v";
 connectAttr "pSphere4_rotateX.o" "pSphere4.rx";
 connectAttr "pSphere4_rotateY.o" "pSphere4.ry";
 connectAttr "pSphere4_rotateZ.o" "pSphere4.rz";
 connectAttr "pSphere4_scaleX.o" "pSphere4.sx";
 connectAttr "pSphere4_scaleY.o" "pSphere4.sy";
 connectAttr "pSphere4_scaleZ.o" "pSphere4.sz";
+connectAttr "pSphere4_visibility.o" "pSphere4.v";
 connectAttr "pSphere3_translateX.o" "pSphere3.tx";
 connectAttr "pSphere3_translateY.o" "pSphere3.ty";
 connectAttr "pSphere3_translateZ.o" "pSphere3.tz";
-connectAttr "pSphere3_visibility.o" "pSphere3.v";
 connectAttr "pSphere3_rotateX.o" "pSphere3.rx";
 connectAttr "pSphere3_rotateY.o" "pSphere3.ry";
 connectAttr "pSphere3_rotateZ.o" "pSphere3.rz";
 connectAttr "pSphere3_scaleX.o" "pSphere3.sx";
 connectAttr "pSphere3_scaleY.o" "pSphere3.sy";
 connectAttr "pSphere3_scaleZ.o" "pSphere3.sz";
+connectAttr "pSphere3_visibility.o" "pSphere3.v";
 connectAttr "polySphere2.out" "pSphereShape3.i";
 connectAttr "locator4_translateX.o" "locator4.tx";
 connectAttr "locator4_translateY.o" "locator4.ty";
