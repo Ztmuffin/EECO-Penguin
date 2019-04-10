@@ -136,6 +136,13 @@
      <Compile Include="Assets\PostProcessing\Editor\Utils\EditorResources.cs" />
      <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
      <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+     <Compile Include="Assets\UTJ\Alembic\Editor\Exporter\AlembicExporterEditor.cs" />
+     <Compile Include="Assets\UTJ\Alembic\Editor\Importer\AlembicImporter.cs" />
+     <Compile Include="Assets\UTJ\Alembic\Editor\Importer\AlembicImporterEditor.cs" />
+     <Compile Include="Assets\UTJ\Alembic\Editor\Importer\AlembicStreamDescriptorEditor.cs" />
+     <Compile Include="Assets\UTJ\Alembic\Editor\Importer\AlembicStreamPlayerEditor.cs" />
+     <Compile Include="Assets\UTJ\Alembic\Editor\Misc\BoolDrawer.cs" />
+     <Compile Include="Assets\UTJ\Alembic\Editor\Timeline\AlembicRecorderClipEditor.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/claud/Documents/CollegeStuff/EECO-Penguin/Claudi/WaterTestingUnity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

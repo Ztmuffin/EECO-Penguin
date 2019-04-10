@@ -1,0 +1,48 @@
+fileFormatVersion: 2
+guid: 768eb2556b8b6b84ea0ce9f395d3d7a3
+ScriptedImporter:
+  fileIDToRecycleName:
+    100006: Splash/Splash
+    100008: Splash/Splash/bifrostLiquid1Mesh
+    100010: Splash/Splash/bifrostLiquid1Mesh/bifrostLiquid1MeshShape
+    400006: Splash/Splash/Transform
+    400008: Splash/Splash/bifrostLiquid1Mesh/Transform
+    400010: Splash/Splash/bifrostLiquid1Mesh/bifrostLiquid1MeshShape/Transform
+    2100000: Default Material
+    2300002: Splash/Splash/bifrostLiquid1Mesh/bifrostLiquid1MeshShape/MeshRenderer
+    3300002: Splash/Splash/bifrostLiquid1Mesh/bifrostLiquid1MeshShape/MeshFilter
+    4300000: /bifrostLiquid1Mesh/bifrostLiquid1MeshShape
+    7400000: Default Animation
+    7400004: Splash_Frames
+    11400004: Splash/Splash/MonoBehaviour-UTJ.Alembic.AlembicStreamPlayer
+    11400006: Splash_ABCDesc
+    100100002: Splash
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f53f5fc499d31e44b9deee84d28a9ee8, type: 3}
+  streamSettings:
+    normals: 1
+    tangents: 1
+    cameraAspectRatio: 2
+    scaleFactor: 0.01
+    swapHandedness: 1
+    flipFaces: 0
+    turnQuadEdges: 0
+    interpolateSamples: 1
+    importPointPolygon: 1
+    importLinePolygon: 1
+    importTrianglePolygon: 1
+    importXform: 1
+    importCameras: 1
+    importMeshes: 1
+    importPoints: 1
+    importVisibility: 1
+  abcStartTime: 0.041666666666666664
+  abcEndTime: 4.166666666666667
+  startTime: 0.041666666666666664
+  endTime: 4.166666666666667
+  importWarning: 
+  varyingTopologyMeshNames: []
+  splittingMeshNames: []
