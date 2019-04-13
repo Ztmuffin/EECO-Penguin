@@ -560,6 +560,23 @@ ModelImporter:
     101108: Penguin5:Transform_Ctrl
     101110: Penguin5:Transform_Ctrl_Grp
     101112: //RootNode
+    101114: EECO_FEET_LOCATORS_animations
+    101116: Penguin4:Eye_Geo1
+    101118: Penguin4:Eye_Geo2
+    101120: Penguin4:FK1
+    101122: Penguin4:FK2
+    101124: Penguin4:IK1
+    101126: Penguin4:IK2
+    101128: Penguin4:L_Ankle_Jnt_Ctrl1
+    101130: Penguin4:L_Ankle_Jnt_Ctrl2
+    101132: Penguin4:L_Toe_01_Jnt_Ctrl1
+    101134: Penguin4:L_Toe_01_Jnt_Ctrl2
+    101136: Penguin4:L_Toe_02_Jnt_Ctrl1
+    101138: Penguin4:L_Toe_02_Jnt_Ctrl2
+    101140: Penguin4:L_Toe_03_Jnt_Ctrl1
+    101142: Penguin4:L_Toe_03_Jnt_Ctrl2
+    101144: Penguin5:Eye_Geo1
+    101146: Penguin5:Eye_Geo2
     400000: EECO
     400002: EECORig_Claw:B_L_LEG
     400004: EECORig_Claw:B_L_LEG1
@@ -1117,6 +1134,23 @@ ModelImporter:
     401108: Penguin5:Transform_Ctrl
     401110: Penguin5:Transform_Ctrl_Grp
     401112: //RootNode
+    401114: EECO_FEET_LOCATORS_animations
+    401116: Penguin4:Eye_Geo1
+    401118: Penguin4:Eye_Geo2
+    401120: Penguin4:FK1
+    401122: Penguin4:FK2
+    401124: Penguin4:IK1
+    401126: Penguin4:IK2
+    401128: Penguin4:L_Ankle_Jnt_Ctrl1
+    401130: Penguin4:L_Ankle_Jnt_Ctrl2
+    401132: Penguin4:L_Toe_01_Jnt_Ctrl1
+    401134: Penguin4:L_Toe_01_Jnt_Ctrl2
+    401136: Penguin4:L_Toe_02_Jnt_Ctrl1
+    401138: Penguin4:L_Toe_02_Jnt_Ctrl2
+    401140: Penguin4:L_Toe_03_Jnt_Ctrl1
+    401142: Penguin4:L_Toe_03_Jnt_Ctrl2
+    401144: Penguin5:Eye_Geo1
+    401146: Penguin5:Eye_Geo2
     2100000: lambert2
     2100002: EECORig_Claw_Dark
     2100004: EECORig_Claw_Glass
@@ -1124,6 +1158,9 @@ ModelImporter:
     2100008: Penguin5_lambert2
     2100010: Penguin4_lambert2
     2100012: lambert4
+    2100014: lambert1
+    2100016: Penguin5_lambert3
+    2100018: Penguin4_lambert3
     2300000: pCone1
     3300000: pCone1
     4300000: EECORig_Claw:Back_Right_Leg2_Geo
@@ -1166,6 +1203,10 @@ ModelImporter:
     4300074: Penguin5:Penguin_Geo
     4300076: Penguin4:Penguin_Geo
     4300078: pCone1
+    4300080: Penguin5:Eye_Geo1
+    4300082: Penguin5:Eye_Geo2
+    4300084: Penguin4:Eye_Geo1
+    4300086: Penguin4:Eye_Geo2
     7400000: Take 001
     9500000: //RootNode
     13700000: EECORig_Claw:Back_Hatch1
@@ -1207,6 +1248,10 @@ ModelImporter:
     13700072: EECORig_Claw:R_Arm_Piece5_Geo
     13700074: Penguin4:Penguin_Geo
     13700076: Penguin5:Penguin_Geo
+    13700078: Penguin4:Eye_Geo1
+    13700080: Penguin4:Eye_Geo2
+    13700082: Penguin5:Eye_Geo1
+    13700084: Penguin5:Eye_Geo2
   externalObjects: {}
   materials:
     importMaterials: 1
