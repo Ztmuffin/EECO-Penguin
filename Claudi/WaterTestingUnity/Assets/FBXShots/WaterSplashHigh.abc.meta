@@ -1,0 +1,48 @@
+fileFormatVersion: 2
+guid: 3789f8211e9748e4c80e822bac6d1669
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: WaterSplashHigh/WaterSplashHigh
+    100002: WaterSplashHigh/WaterSplashHigh/bifrostLiquid1Mesh
+    100004: WaterSplashHigh/WaterSplashHigh/bifrostLiquid1Mesh/bifrostLiquid1MeshShape
+    400000: WaterSplashHigh/WaterSplashHigh/Transform
+    400002: WaterSplashHigh/WaterSplashHigh/bifrostLiquid1Mesh/Transform
+    400004: WaterSplashHigh/WaterSplashHigh/bifrostLiquid1Mesh/bifrostLiquid1MeshShape/Transform
+    2100000: Default Material
+    2300000: WaterSplashHigh/WaterSplashHigh/bifrostLiquid1Mesh/bifrostLiquid1MeshShape/MeshRenderer
+    3300000: WaterSplashHigh/WaterSplashHigh/bifrostLiquid1Mesh/bifrostLiquid1MeshShape/MeshFilter
+    4300000: /bifrostLiquid1Mesh/bifrostLiquid1MeshShape
+    7400000: Default Animation
+    7400002: WaterSplashHigh_Frames
+    11400000: WaterSplashHigh/WaterSplashHigh/MonoBehaviour-UTJ.Alembic.AlembicStreamPlayer
+    11400002: WaterSplashHigh_ABCDesc
+    100100000: WaterSplashHigh
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f53f5fc499d31e44b9deee84d28a9ee8, type: 3}
+  streamSettings:
+    normals: 1
+    tangents: 1
+    cameraAspectRatio: 2
+    scaleFactor: 0.01
+    swapHandedness: 1
+    flipFaces: 0
+    turnQuadEdges: 0
+    interpolateSamples: 1
+    importPointPolygon: 1
+    importLinePolygon: 1
+    importTrianglePolygon: 1
+    importXform: 1
+    importCameras: 1
+    importMeshes: 1
+    importPoints: 1
+    importVisibility: 1
+  abcStartTime: 0.041666666666666664
+  abcEndTime: 4.166666666666667
+  startTime: 0.041666666666666664
+  endTime: 4.166666666666667
+  importWarning: 
+  varyingTopologyMeshNames: []
+  splittingMeshNames: []
