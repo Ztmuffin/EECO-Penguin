@@ -1,14 +1,14 @@
 //Maya ASCII 2018ff09 scene
 //Name: Eeco in Penguin_Scene_6-Anim.ma
-//Last modified: Wed, Apr 10, 2019 11:53:17 AM
+//Last modified: Sat, Apr 13, 2019 06:40:55 PM
 //Codeset: 1252
 file -rdi 1 -ns "Penguin1" -dr 1 -rfn "PenguinRN1" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
-file -rdi 1 -ns "Penguin" -rfn "PenguinRN" -op "v=0;" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
+file -rdi 1 -ns "Penguin" -rfn "PenguinRN" -op "v=0;" -typ "mayaAscii" "F:/addis/Documents/UVU/Repositories/EECO-Penguin/Addison/Maya Files/PenguinFIN.ma";
 file -rdi 1 -ns "EECORig_Claw" -rfn "EECORig_ClawRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/10541409/Documents/JrWorkAddis/ProjectJRYear/Maya/EECORig&Claw.ma";
 file -r -ns "Penguin1" -dr 1 -rfn "PenguinRN1" -op "v=0;" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
-file -r -ns "Penguin" -dr 1 -rfn "PenguinRN" -op "v=0;" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
+file -r -ns "Penguin" -dr 1 -rfn "PenguinRN" -op "v=0;" -typ "mayaAscii" "F:/addis/Documents/UVU/Repositories/EECO-Penguin/Addison/Maya Files/PenguinFIN.ma";
 file -r -ns "EECORig_Claw" -dr 1 -rfn "EECORig_ClawRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/10541409/Documents/JrWorkAddis/ProjectJRYear/Maya/EECORig&Claw.ma";
 requires maya "2018ff09";
@@ -29070,7 +29070,7 @@ createNode locator -n "locatorShape2" -p "locator2";
 	rename -uid "9F9C7AFD-49A9-5EEB-0E0E-ABAC1141CADC";
 	setAttr -k off ".v";
 createNode fosterParent -n "EECORig_ClawRNfosterParent1";
-	rename -uid "C18AD322-46E4-155F-2569-B8AEA2AFB133";
+	rename -uid "5211361E-4BB0-5030-2C3F-769B71B38ECE";
 createNode parentConstraint -n "Translate_FK_Ctrl_parentConstraint1" -p "EECORig_ClawRNfosterParent1";
 	rename -uid "22A0E8DE-4226-22C1-E4E5-2B9B09E77745";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "pCylinder1W0" -dv 1 -min 0 -at "double";
@@ -29091,22 +29091,22 @@ createNode parentConstraint -n "Translate_FK_Ctrl_parentConstraint1" -p "EECORig
 	setAttr ".rsrr" -type "double3" 90 6.3611093629270335e-15 100 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "6F0B7BA8-45E6-E5C4-4572-6E9E266AA135";
-	setAttr -s 10 ".lnk";
-	setAttr -s 10 ".slnk";
+	rename -uid "23D5B553-473B-072B-BE75-02BC17CAEB5B";
+	setAttr -s 13 ".lnk";
+	setAttr -s 13 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "66DBA24E-4D89-E00E-841A-3AB4CF9F7523";
+	rename -uid "A48BA6E5-4445-5FFE-2341-75A04BC605BB";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 1 0 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D49861CA-42AD-095F-49C2-93A0EB8E8B62";
+	rename -uid "DD1453E0-433E-563B-5CF8-24A3C42E35B0";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "222AB166-428E-D06C-E3F0-3FA117A927CB";
+	rename -uid "0AD563A2-416E-DF6F-9F75-D68F6492AD35";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "232505B5-4509-E4F2-1E8D-618B68CAE291";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "7D75E445-4CE0-2CF9-3C91-368F8F183F8B";
+	rename -uid "C71D619B-471A-E404-EC51-9FA33CCDC7CE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E54D00F2-45FE-BCB4-6984-A28936D45965";
 	setAttr ".g" yes;
@@ -32755,6 +32755,7 @@ createNode animCurveTU -n "Spine_02_Jnt_Ctrl_FollowRotate2";
 	setAttr ".ktv[0]"  30 1;
 createNode reference -n "PenguinRN";
 	rename -uid "1411E78E-4942-2BFB-E092-6BA86A2E267A";
+	setAttr ".fn[0]" -type "string" "F:/addis/Documents/UVU/Repositories/EECO-Penguin/Addison/Maya Files/Penguin.ma{1}";
 	setAttr -s 120 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
@@ -32879,7 +32880,11 @@ createNode reference -n "PenguinRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"PenguinRN"
 		"PenguinRN" 0
-		"PenguinRN" 238
+		"PenguinRN" 240
+		2 "|Penguin:Penguin|Penguin:Geometry|Penguin:Eye_Geo1|Penguin:Eye_GeoShape1" 
+		"visibility" " -k 0 1"
+		2 "|Penguin:Penguin|Penguin:Geometry|Penguin:Eye_Geo2|Penguin:Eye_GeoShape2" 
+		"visibility" " -k 0 1"
 		2 "|Penguin:Penguin|Penguin:Geometry|Penguin:Penguin_Geo|Penguin:Penguin_GeoShape" 
 		"visibility" " -k 0 1"
 		2 "|Penguin:Penguin|Penguin:Geometry|Penguin:Penguin_Geo|Penguin:Penguin_GeoShape" 
@@ -32987,7 +32992,7 @@ createNode reference -n "PenguinRN";
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_02_Jnt_Ctrl_Grp|Penguin:Spine_02_Jnt_Ctrl" 
 		"translateZ" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_02_Jnt_Ctrl_Grp|Penguin:Spine_02_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 11.29287139198098977 0 0"
+		"rotate" " -type \"double3\" 23.89075013416814386 0 0"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_02_Jnt_Ctrl_Grp|Penguin:Spine_02_Jnt_Ctrl" 
 		"rotateX" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_03_Jnt_Ctrl_Grp|Penguin:Spine_03_Jnt_Ctrl" 
@@ -32999,8 +33004,7 @@ createNode reference -n "PenguinRN";
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_03_Jnt_Ctrl_Grp|Penguin:Spine_03_Jnt_Ctrl" 
 		"translateZ" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_03_Jnt_Ctrl_Grp|Penguin:Spine_03_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" -0.61493713631711788 -9.05077556703956176 1.18235114388074969"
-		
+		"rotate" " -type \"double3\" 16.94414322882310486 0 0"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_03_Jnt_Ctrl_Grp|Penguin:Spine_03_Jnt_Ctrl" 
 		"rotateX" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_03_Jnt_Ctrl_Grp|Penguin:Spine_03_Jnt_Ctrl" 
@@ -33016,8 +33020,7 @@ createNode reference -n "PenguinRN";
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_04_Jnt_Ctrl_Grp|Penguin:Spine_04_Jnt_Ctrl" 
 		"translateZ" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_04_Jnt_Ctrl_Grp|Penguin:Spine_04_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" -3.38591741865682971 -5.91497532283881178 -5.19908010315857538"
-		
+		"rotate" " -type \"double3\" 18.8185182493286014 35.90050006186574194 0"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_04_Jnt_Ctrl_Grp|Penguin:Spine_04_Jnt_Ctrl" 
 		"rotateX" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Spine_04_Jnt_Ctrl_Grp|Penguin:Spine_04_Jnt_Ctrl" 
@@ -33033,8 +33036,7 @@ createNode reference -n "PenguinRN";
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Neck_Jnt_Ctrl_Grp|Penguin:Neck_Jnt_Ctrl" 
 		"translateZ" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Neck_Jnt_Ctrl_Grp|Penguin:Neck_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" -13.74633771776421476 -52.53687345060566827 -4.6651854079365167"
-		
+		"rotate" " -type \"double3\" 43.16660173111236531 18.51785424827692594 0"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Neck_Jnt_Ctrl_Grp|Penguin:Neck_Jnt_Ctrl" 
 		"rotateX" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:Neck_Jnt_Ctrl_Grp|Penguin:Neck_Jnt_Ctrl" 
@@ -33050,8 +33052,7 @@ createNode reference -n "PenguinRN";
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:L_Wing_01_Jnt_Ctrl_Grp|Penguin:L_Wing_01_Jnt_Ctrl" 
 		"translateZ" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:L_Wing_01_Jnt_Ctrl_Grp|Penguin:L_Wing_01_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 13.46783795881872869 2.75508472395132342 -55.95141782837853128"
-		
+		"rotate" " -type \"double3\" 0 -34.54197765502057393 -34.74707483600376889"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:L_Wing_01_Jnt_Ctrl_Grp|Penguin:L_Wing_01_Jnt_Ctrl" 
 		"rotateX" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:L_Wing_01_Jnt_Ctrl_Grp|Penguin:L_Wing_01_Jnt_Ctrl" 
@@ -33093,8 +33094,7 @@ createNode reference -n "PenguinRN";
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:R_Wing_01_Jnt_Ctrl_Grp|Penguin:R_Wing_01_Jnt_Ctrl" 
 		"translateZ" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:R_Wing_01_Jnt_Ctrl_Grp|Penguin:R_Wing_01_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 11.82097034790616874 9.67777903596724443 -52.58511877418705893"
-		
+		"rotate" " -type \"double3\" 0 -32.54843614359808157 -49.4031708259584974"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:R_Wing_01_Jnt_Ctrl_Grp|Penguin:R_Wing_01_Jnt_Ctrl" 
 		"rotateX" " -av"
 		2 "|Penguin:Penguin|Penguin:Controls|Penguin:Transform_Ctrl_Grp|Penguin:Transform_Ctrl|Penguin:RK|Penguin:R_Wing_01_Jnt_Ctrl_Grp|Penguin:R_Wing_01_Jnt_Ctrl" 
@@ -35110,7 +35110,7 @@ createNode reference -n "EECORig_ClawRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"EECORig_ClawRN"
 		"EECORig_ClawRN" 0
-		"EECORig_ClawRN" 577
+		"EECORig_ClawRN" 583
 		0 "|EECORig_Claw:EECO_Rig" "|EECO" "-s -r "
 		0 "|EECORig_ClawRNfosterParent1|Translate_FK_Ctrl_parentConstraint1" "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" 
 		"-s -r "
@@ -35182,13 +35182,13 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Droplet_2|EECORig_Claw:Droplet_2Shape" 
 		"visibility" " -k 0 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo" 
-		"visibility" " -av 1"
-		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo|EECORig_Claw:Face01_GeoShape" 
-		"visibility" " -k 0 1"
-		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8" 
 		"visibility" " -av 0"
-		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8|EECORig_Claw:Face01_Geo8Shape" 
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo|EECORig_Claw:Face01_GeoShape" 
 		"visibility" " -k 0 0"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8" 
+		"visibility" " -av 1"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8|EECORig_Claw:Face01_Geo8Shape" 
+		"visibility" " -k 0 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1" 
 		"visibility" " -av 0"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1|EECORig_Claw:Face01_Geo1Shape" 
@@ -35226,7 +35226,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:L_Arm_Grp|EECORig_Claw:L_Arm_Piece5_Geo|EECORig_Claw:L_Arm_Piece5_GeoShape" 
 		"visibility" " -k 0 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
-		"rotate" " -type \"double3\" -119.30257653563194253 37.08097763490916776 -49.02002714534093997"
+		"rotate" " -type \"double3\" -18.46842002827104423 21.32812881204862165 -32.21379839594354166"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
 		"rotateX" " -av"
@@ -35234,12 +35234,19 @@ createNode reference -n "EECORig_ClawRN";
 		"rotateY" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
 		"rotateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
+		"scale" " -type \"double3\" 1.00000000000000044 1.00000000000000022 1.00000000000000022"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
+		"scaleY" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt" 
+		"scaleZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt|EECORig_Claw:R_Arm_2_IK_Jnt" 
-		"translateX" " -av 0.71198409795761108"
+		"translateX" " -av 1.55562138557434082"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:R_Arm_1_IK_Jnt|EECORig_Claw:R_Arm_2_IK_Jnt" 
-		"rotate" " -type \"double3\" 0 0.68198957667140836 8.22887568378801149"
+		"rotate" " -type \"double3\" 0 3.92726974576523835 47.38637600920745285"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
-		"rotate" " -type \"double3\" 111.15429823037632673 -27.67813973401374383 -50.08347194460186813"
+		"rotate" " -type \"double3\" 97.83285126568122791 -33.9853953676706908 -100.40064219121302358"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
 		"rotateX" " -av"
@@ -35247,13 +35254,20 @@ createNode reference -n "EECORig_ClawRN";
 		"rotateY" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
 		"rotateZ" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
+		"scale" " -type \"double3\" 1.00000000000000067 1.00000000000000022 1.00000000000000044"
+		
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
+		"scaleX" " -av"
+		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt" 
+		"scaleZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt|EECORig_Claw:L_Arm_2_IK_Jnt" 
-		"translateX" " -av -0.7800937294960022"
+		"translateX" " -av -1.08770275115966797"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:L_Arm_1_IK_Jnt|EECORig_Claw:L_Arm_2_IK_Jnt" 
-		"rotate" " -type \"double3\" -0.00037280192132175762 3.92752245070365014 47.38704958031819814"
+		"rotate" " -type \"double3\" -0.00026737040054958526 3.92745148303010394 47.38686510789233353"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
-		"translate" " -type \"double3\" -837.87306217456716695 50.07101205600582716 769.23157330421736333"
+		"translate" " -type \"double3\" -849.2108737987313134 173.36045755255341305 773.27824242246379072"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
 		"translateX" " -av"
@@ -35262,7 +35276,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
 		"translateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
-		"rotate" " -type \"double3\" 153.02751642240664864 40.9286129642279306 111.35329625300697387"
+		"rotate" " -type \"double3\" -101.90837376212986953 20.92605796162398235 16.27929779273505417"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
 		"rotateX" " -av"
@@ -35271,7 +35285,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
 		"rotateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
-		"scale" " -type \"double3\" 0.99999999999999989 1.00000000000000022 1.00000000000000044"
+		"scale" " -type \"double3\" 1.00000000000000044 1.00000000000000022 1.00000000000000044"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
 		"scaleX" " -av"
@@ -35280,9 +35294,9 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt" 
 		"scaleZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Right_Leg_IK_Jnt|EECORig_Claw:Front_Right_Leg_IK_Jnt2" 
-		"rotate" " -type \"double3\" 0 -20.50824794595153477 -121.72320458816697908"
+		"rotate" " -type \"double3\" 0 4.70583677773651399 27.77200685524611501"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
-		"translate" " -type \"double3\" -841.20577889188029985 50.54051422618372413 769.66763715060039885"
+		"translate" " -type \"double3\" -850.99473321865309572 176.24401495030559772 773.13496999801327547"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
 		"translateX" " -av"
@@ -35291,7 +35305,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
 		"translateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
-		"rotate" " -type \"double3\" 12.67754012331575275 -20.13221897204924815 151.57334070601083909"
+		"rotate" " -type \"double3\" -61.79369373217766537 2.772327213483611 78.54447699979380104"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
 		"rotateX" " -av"
@@ -35300,7 +35314,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
 		"rotateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
-		"scale" " -type \"double3\" 1.00000000000000022 1.00000000000000044 1.00000000000000089"
+		"scale" " -type \"double3\" 1.00000000000000044 1.00000000000000067 1.00000000000000044"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
 		"scaleX" " -av"
@@ -35309,9 +35323,9 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt" 
 		"scaleZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Right_Leg_IK_Jnt|EECORig_Claw:Back_Right_Leg_IK_Jnt2" 
-		"rotate" " -type \"double3\" 0 77.41154582481958357 -90.71844823741881214"
+		"rotate" " -type \"double3\" 0 -19.24434090324679758 16.95057775576265513"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
-		"translate" " -type \"double3\" -840.47002016801434365 50.19217430101969768 763.78160622743121166"
+		"translate" " -type \"double3\" -848.04424663418171804 176.01606768043708939 767.98223183382094703"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
 		"translateX" " -av"
@@ -35320,7 +35334,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
 		"translateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
-		"rotate" " -type \"double3\" -66.08857721131495566 -68.20986133594010425 140.07840669377100085"
+		"rotate" " -type \"double3\" 143.54634189262932864 -21.98910993277795711 -142.53868786952585879"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
 		"rotateX" " -av"
@@ -35329,7 +35343,8 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
 		"rotateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
-		"scale" " -type \"double3\" 1 1 1.00000000000000067"
+		"scale" " -type \"double3\" 1.00000000000000067 1.00000000000000022 1.00000000000000044"
+		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
 		"scaleX" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
@@ -35337,10 +35352,10 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt" 
 		"scaleZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Front_Left_Leg_IK_Jnt|EECORig_Claw:Front_Left_Leg_IK_Jnt2" 
-		"rotate" " -type \"double3\" 2.9337866631088033e-05 -6.34293852013958936 -37.62623583966862384"
+		"rotate" " -type \"double3\" -2.1639256960129682e-05 4.70845067616070878 27.77301275445079654"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
-		"translate" " -type \"double3\" -842.90026205983883756 50.61956924208752895 766.11158846259331767"
+		"translate" " -type \"double3\" -850.23351887128967519 177.97676796411144551 769.67937672275286332"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
 		"translateX" " -av"
@@ -35349,7 +35364,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
 		"translateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
-		"rotate" " -type \"double3\" 70.03374710280307625 -49.87727530445014423 -123.85431566138031201"
+		"rotate" " -type \"double3\" 48.8049008875505379 -16.53759634616316987 -126.16184016202507223"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
 		"rotateX" " -av"
@@ -35358,7 +35373,8 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
 		"rotateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
-		"scale" " -type \"double3\" 1 1.00000000000000022 1.00000000000000044"
+		"scale" " -type \"double3\" 1.00000000000000044 1.00000000000000067 1.00000000000000044"
+		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
 		"scaleX" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
@@ -35366,12 +35382,12 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt" 
 		"scaleZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Joints|EECORig_Claw:IK_Joints1|EECORig_Claw:Back_Left_Leg_IK_Jnt|EECORig_Claw:Back_Left_Leg_IK_Jnt2" 
-		"rotate" " -type \"double3\" -2.794554586171781e-05 58.11505745123385225 -48.53585249770235777"
+		"rotate" " -type \"double3\" 9.6137618805511533e-06 -19.24654420677948252 16.95272729672846168"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
-		"translate" " -type \"double3\" -129.69469527230896233 -4.09630651121572953 2.34624219352231567"
+		"translate" " -type \"double3\" -3.72762375540649593 1.94450439141236608 14.16811915876892236"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"translateX" " -av"
@@ -35380,7 +35396,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
-		"rotate" " -type \"double3\" 25.69866031196187706 -14.37455524193635625 -0.83931768064635948"
+		"rotate" " -type \"double3\" -19.23777113617290269 -50.81539533948635068 35.20943241620437902"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"rotateX" " -av"
@@ -35407,7 +35423,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
-		"translate" " -type \"double3\" -0.43148167102621537 0.0086843015679020901 0.032443200174544821"
+		"translate" " -type \"double3\" -0.53005766943296129 -1.11012825644949276 2.76841563435382776"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"translateX" " -av"
@@ -35416,7 +35432,8 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 1.25454567342704149 -5.41647636837227786 5.24420922957278179"
+		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"rotateX" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
@@ -35524,8 +35541,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
-		"translate" " -type \"double3\" -0.50485179112861589 0.20186871829622713 -2.79304684108336065"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
 		"translateX" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
@@ -35551,8 +35567,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
-		"translate" " -type \"double3\" 0.5809939153462198 -0.96890522141860635 2.37445265163333508"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"translateX" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
@@ -35568,8 +35583,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"rotateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
-		"translate" " -type \"double3\" 0.23998243795364127 -0.93364629006964373 2.39068607504176223"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
 		"translateX" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_R_LEG1|EECORig_Claw:FR_AIM_IK_Ctrl_Grp|EECORig_Claw:FR_AIM_IK_Ctrl" 
@@ -35579,8 +35593,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
-		"translate" " -type \"double3\" -1.07327165071935737 0.87588822235599884 -3.04901598315160527"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"translateX" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
@@ -35612,7 +35625,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_1_IK_Ctrl_Grp|EECORig_Claw:L_Arm_1_IK_Ctrl" 
 		"rotateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
-		"translate" " -type \"double3\" 0.77418574739538193 -0.18589537328079209 0.20015059974506305"
+		"translate" " -type \"double3\" 1.42930779502782279 -0.5175825722314159 -0.76510053653176757"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:L_Arm_2_PV_IK_Ctrl" 
 		"translateX" " -av"
@@ -35631,7 +35644,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
-		"translate" " -type \"double3\" 0.51812447713572352 -0.3727779520397006 0.46841628665799612"
+		"translate" " -type \"double3\" 0.95395778993598168 -1.38287021518260245 -0.0576891262218929"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"translateX" " -av"
@@ -35640,7 +35653,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"translateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
-		"rotate" " -type \"double3\" -54.23297392253956417 36.69345129382181625 16.0778609559729837"
+		"rotate" " -type \"double3\" 62.28756120994115264 -26.92766621722582343 118.23368008670969687"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"rotateX" " -av"
@@ -35673,7 +35686,8 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_IK_Ctrl_Grp|EECORig_Claw:R_Arm_1_IK_Ctrl" 
 		"rotateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.55936609542053461 0.43888769288837698 1.24919440786504099"
+		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
 		"translateX" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_PV_IK_Ctrl_Grp|EECORig_Claw:R_Arm_2_PV_IK_Ctrl" 
@@ -35691,7 +35705,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
-		"translate" " -type \"double3\" -0.20408847463928845 0.19471787896233128 -0.092714263314151682"
+		"translate" " -type \"double3\" -2.04862523370013738 1.96841265044786828 -0.49993123412384854"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"translateX" " -av"
@@ -35700,7 +35714,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"translateZ" " -av"
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
-		"rotate" " -type \"double3\" -15.37046249218485272 30.10942677109819243 -22.9444180414934884"
+		"rotate" " -type \"double3\" 41.15157793338733683 25.90375539754036183 103.43913588761158451"
 		
 		2 "|EECO|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"rotateX" " -av"
@@ -38962,8 +38976,7 @@ createNode animCurveTU -n "Face01_Geo8_visibility";
 	setAttr -s 5 ".ktv[0:4]"  88 1 109 1 110 0 144 1 173 0;
 	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 select -ne :time1;
-	setAttr ".o" 196;
-	setAttr ".unw" 196;
+	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -38973,10 +38986,10 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".tmr" 4096;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 10 ".st";
+	setAttr -s 11 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 11 ".s";
+	setAttr -s 12 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
@@ -38986,7 +38999,7 @@ select -ne :defaultRenderingList1;
 select -ne :defaultTextureList1;
 	setAttr -s 3 ".tx";
 select -ne :initialShadingGroup;
-	setAttr -s 42 ".dsm";
+	setAttr -s 44 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 33 ".gn";
 select -ne :initialParticleSE;
@@ -39850,6 +39863,7 @@ connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni
 		;
 connectAttr "lambert2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
+connectAttr "sharedReferenceNode.sr" "PenguinRN.sr";
 connectAttr "polyCylinder1.out" "polySplit1.ip";
 connectAttr "polySplit1.out" "polySplit2.ip";
 connectAttr "polySplit2.out" "polyExtrudeFace1.ip";
