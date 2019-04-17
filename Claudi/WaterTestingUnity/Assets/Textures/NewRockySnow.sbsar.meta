@@ -23,7 +23,7 @@ ScriptedImporter:
     generateAllOutputs: 0
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://NewRockySnow\" label=\"\" >\n  <presetinput
-      identifier=\"Rock_Size\" uid=\"2056210029\" type=\"0\" value=\"2.91\" />\n  <presetinput
+      identifier=\"Rock_Size\" uid=\"2056210029\" type=\"0\" value=\"0.83\" />\n  <presetinput
       identifier=\"Snow_Amount\" uid=\"2056234780\" type=\"0\" value=\"0.946\" />\n
       \ <presetinput identifier=\"Snow_Coverage_On_Rocks\" uid=\"2056244667\" type=\"0\"
       value=\"1\" />\n </sbspreset>\n"
@@ -50,7 +50,7 @@ ScriptedImporter:
     - textureName: NewRockySnow - baseColor
       wrapMode: 0
       filterMode: 1
-      aniso: 1
+      aniso: 0
     - textureName: NewRockySnow - normal
       wrapMode: 0
       filterMode: 1
