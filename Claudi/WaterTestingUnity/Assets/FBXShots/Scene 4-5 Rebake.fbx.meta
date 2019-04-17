@@ -9694,6 +9694,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Frame1
+    second: {fileID: 2100000, guid: 99094ee71bfc000418383f49f5ee8be1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legs
+    second: {fileID: 2100000, guid: 0eb5142e0a3865e499fd845b13b7a820, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SpikeRivets
+    second: {fileID: 2100000, guid: e5c920451dadbd04ab02b85e9ecac952, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Tubes
     second: {fileID: 2100000, guid: d7532d016ea14ed4dabfb4798f78e3a5, type: 2}
   materials:
