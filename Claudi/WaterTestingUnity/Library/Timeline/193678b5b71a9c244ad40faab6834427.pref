@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeInFrames: 0
-  timeAreaShownRange: {x: -0.67434883, y: 47.204414}
+  timeAreaShownRange: {x: -1.6182158, y: 112.95146}
   showAudioWaveform: 1
   trackHeight: 30
   trackScale: 1
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 5.856809, y: 40.997658}
-  windowTime: 32.571048736572266
-  verticalScroll: 0
+  windowTime: 0
+  verticalScroll: 38
   m_Keys:
   - {fileID: 114437455741704130, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114933717353580226, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
@@ -37,7 +37,6 @@ MonoBehaviour:
   - {fileID: 114168619666664982, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114002019250630244, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114494576032960472, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
-  - {fileID: 114182566643525400, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114809033209171030, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114180208959065054, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114915034993824186, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
@@ -55,6 +54,9 @@ MonoBehaviour:
   - {fileID: 114307892101803878, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114489394586726858, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114956540500447412, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114164342700425844, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114221770797093324, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114310010091796240, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   m_Vals:
   - collapsed: 0
     showInlineCurves: 0
@@ -63,69 +65,12 @@ MonoBehaviour:
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 0
-    showInlineCurves: 1
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 1
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 0
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 1
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 1
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 1
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
-    showInlineCurves: 0
-    inlineAnimationCurveHeight: 100
-  - collapsed: 0
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 0
@@ -146,10 +91,73 @@ MonoBehaviour:
   - collapsed: 0
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
   - collapsed: 1
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 1
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 0
