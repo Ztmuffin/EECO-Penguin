@@ -85,6 +85,6 @@ Material:
     - _node_2584: 0.51
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorDeep: {r: 0, g: 0.5001289, b: 0.8490566, a: 1}
+    - _ColorDeep: {r: 0.030037375, g: 0.26314563, b: 0.4245283, a: 1}
     - _ColorSurface: {r: 0.9103774, g: 0.9735728, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
