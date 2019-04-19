@@ -690,6 +690,12 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{64007DEA-5D8B-18BB-63D5-8357B298D4E9}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Editor.csproj">
+      <Project>{18AD66D7-DF1F-84E5-329F-899509E086F6}</Project>      <Name>Unity.Recorder.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.csproj">
+      <Project>{E3794010-EF4E-6193-63C5-EF9FCCE7D0AE}</Project>      <Name>Unity.Recorder</Name>    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Samples.csproj">
+      <Project>{0508F481-DCAC-C596-F693-56E14F6442F4}</Project>      <Name>Unity.Recorder.Samples</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
