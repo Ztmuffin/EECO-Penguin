@@ -19,7 +19,7 @@ MonoBehaviour:
   trackScale: 1
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 5.856809, y: 40.997658}
-  windowTime: 0
+  windowTime: 31.636938210576773
   verticalScroll: 0
   m_Keys:
   - {fileID: 114437455741704130, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
@@ -69,6 +69,8 @@ MonoBehaviour:
   - {fileID: 114077939514907762, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114176857221215316, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114198837284367358, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114630351125369884, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114903005980926516, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   m_Vals:
   - collapsed: 0
     showInlineCurves: 0
@@ -170,6 +172,12 @@ MonoBehaviour:
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 0
