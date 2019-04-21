@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeInFrames: 0
-  timeAreaShownRange: {x: 0.0000005760606, y: 73.65583}
+  timeAreaShownRange: {x: 1.9574922, y: 66.515144}
   showAudioWaveform: 1
   trackHeight: 30
   trackScale: 1
@@ -62,6 +62,13 @@ MonoBehaviour:
   - {fileID: 114517139692698410, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114898040024127706, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   - {fileID: 114695949257701540, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114917745865179960, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114746669285708368, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114866622498686470, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114954273538861084, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114077939514907762, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114176857221215316, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
+  - {fileID: 114198837284367358, guid: 193678b5b71a9c244ad40faab6834427, type: 2}
   m_Vals:
   - collapsed: 0
     showInlineCurves: 0
@@ -163,6 +170,27 @@ MonoBehaviour:
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+  - collapsed: 0
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100
   - collapsed: 0

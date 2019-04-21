@@ -65,12 +65,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _ColorFresnel: 0.4
+    - _ColorFresnel: 0.83
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.663
+    - _Glossiness: 0.548
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
@@ -85,6 +85,6 @@ Material:
     - _node_2584: 0.51
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorDeep: {r: 0, g: 0.037871126, b: 0.0754717, a: 1}
-    - _ColorSurface: {r: 0.30927375, g: 0.38049668, b: 0.4716981, a: 1}
+    - _ColorDeep: {r: 0.24003203, g: 0.45179233, b: 0.5849056, a: 1}
+    - _ColorSurface: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
