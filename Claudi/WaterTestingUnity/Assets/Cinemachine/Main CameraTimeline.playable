@@ -1270,7 +1270,7 @@ MonoBehaviour:
   - m_Start: 30.070276260375977
     m_ClipIn: 0
     m_Asset: {fileID: 114412933403747390}
-    m_Duration: 5
+    m_Duration: 6.249212265014648
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114163087896955500}
     m_EaseInDuration: 0
@@ -1336,10 +1336,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: CM vcam7
     m_Version: 1
-  - m_Start: 35.07027626037598
+  - m_Start: 36.319488525390625
     m_ClipIn: 0
     m_Asset: {fileID: 114481732155009522}
-    m_Duration: 8.650535583496094
+    m_Duration: 7.401323318481445
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114163087896955500}
     m_EaseInDuration: 0

@@ -161,6 +161,8 @@ ModelImporter:
     100310: Penguin1:Tail_02_Jnt_Ctrl_Grp
     100312: Penguin1:Transform_Ctrl
     100314: Penguin1:Transform_Ctrl_Grp
+    100316: Penguin1:Eye_Geo1
+    100318: Penguin1:Eye_Geo2
     400000: //RootNode
     400002: Penguin1:COG_Jnt
     400004: Penguin1:COG_Jnt_Ctrl
@@ -319,11 +321,19 @@ ModelImporter:
     400310: Penguin1:Tail_02_Jnt_Ctrl_Grp
     400312: Penguin1:Transform_Ctrl
     400314: Penguin1:Transform_Ctrl_Grp
+    400316: Penguin1:Eye_Geo1
+    400318: Penguin1:Eye_Geo2
     2100000: Penguin1_lambert2
+    2100002: lambert1
+    2100004: Penguin1_lambert3
     4300000: Penguin1:Penguin_Geo
+    4300002: Penguin1:Eye_Geo1
+    4300004: Penguin1:Eye_Geo2
     7400000: Take 001
     9500000: //RootNode
     13700000: Penguin1:Penguin_Geo
+    13700002: Penguin1:Eye_Geo1
+    13700004: Penguin1:Eye_Geo2
   externalObjects: {}
   materials:
     importMaterials: 1
