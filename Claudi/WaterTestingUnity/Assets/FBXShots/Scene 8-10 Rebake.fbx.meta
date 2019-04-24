@@ -577,6 +577,7 @@ ModelImporter:
     101142: Penguin4:L_Toe_03_Jnt_Ctrl2
     101144: Penguin5:Eye_Geo1
     101146: Penguin5:Eye_Geo2
+    101148: Penguin6
     400000: EECO
     400002: EECORig_Claw:B_L_LEG
     400004: EECORig_Claw:B_L_LEG1
@@ -1151,6 +1152,7 @@ ModelImporter:
     401142: Penguin4:L_Toe_03_Jnt_Ctrl2
     401144: Penguin5:Eye_Geo1
     401146: Penguin5:Eye_Geo2
+    401148: Penguin6
     2100000: lambert2
     2100002: EECORig_Claw_Dark
     2100004: EECORig_Claw_Glass
