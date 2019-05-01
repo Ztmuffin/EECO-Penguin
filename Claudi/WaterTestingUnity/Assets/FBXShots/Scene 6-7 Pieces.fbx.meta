@@ -405,6 +405,7 @@ ModelImporter:
     100798: SpraySnow
     100800: Penguin:Eye_Geo1
     100802: Penguin:Eye_Geo2
+    100804: pSphere1
     400000: EECO
     400002: EECORig_Claw:B_L_LEG
     400004: EECORig_Claw:B_L_LEG1
@@ -807,6 +808,7 @@ ModelImporter:
     400798: SpraySnow
     400800: Penguin:Eye_Geo1
     400802: Penguin:Eye_Geo2
+    400804: pSphere1
     2100000: lambert1
     2100002: Penguin_lambert2
     2100004: EECORig_Claw_Dark
@@ -818,11 +820,13 @@ ModelImporter:
     2300004: pSphere4
     2300006: pSphere5
     2300008: pSphere6
+    2300010: pSphere1
     3300000: pCylinder1
     3300002: pSphere3
     3300004: pSphere4
     3300006: pSphere5
     3300008: pSphere6
+    3300010: pSphere1
     4300000: pCylinder1
     4300002: Snow
     4300004: Penguin:Penguin_Geo
@@ -869,6 +873,7 @@ ModelImporter:
     4300086: EECORig_Claw:L_Arm_Piece5_Geo
     4300088: Penguin:Eye_Geo1
     4300090: Penguin:Eye_Geo2
+    4300092: pSphere1
     7400000: Take 001
     9500000: //RootNode
     13700000: EECORig_Claw:Back_Hatch1
